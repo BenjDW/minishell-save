@@ -1,0 +1,84 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    groupe de fonction                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bde-wits <bde-wits@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/06/25 06:59:08 by bde-wits          #+#    #+#              #
+#    Updated: 2024/06/25 07:07:18 by bde-wits         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+1. Fonctions de la bibliothèque readline :
+readline : Lit une ligne de l'entrée standard avec une fonctionnalité d'édition en ligne.
+rl_clear_history : Efface l'historique des lignes lues par readline.
+rl_on_new_line : Informe la bibliothèque readline qu'une nouvelle ligne commence.
+rl_replace_line : Remplace le contenu actuel de la ligne d'entrée.
+rl_redisplay : Redisplay the current input line.
+
+2. Gestion de l'historique :
+add_history : Ajoute la ligne courante à l'historique.
+
+3. Entrée/sortie standard et gestion de mémoire :
+printf : Imprime une chaîne formatée sur la sortie standard.
+malloc : Alloue de la mémoire dynamique.
+free : Libère la mémoire allouée par malloc.
+write : Écrit des données sur un fichier ou un descripteur de fichier.
+
+4. Gestion de fichiers et répertoires :
+access : Vérifie l'existence d'un fichier et les permissions d'accès.
+open : Ouvre un fichier et retourne un descripteur de fichier.
+read : Lit des données à partir d'un fichier ou d'un descripteur de fichier.
+close : Ferme un descripteur de fichier.
+getcwd : Récupère le répertoire de travail courant.
+chdir : Change le répertoire de travail courant.
+stat : Obtient le statut d'un fichier.
+lstat : Comme stat, mais ne suit pas les liens symboliques.
+fstat : Obtient le statut d'un fichier en utilisant un descripteur de fichier.
+unlink : Supprime un fichier.
+dup : Duplique un descripteur de fichier.
+dup2 : Duplique un descripteur de fichier vers un autre descripteur spécifié.
+pipe : Crée un pipe (tube) pour la communication entre processus.
+opendir : Ouvre un répertoire.
+readdir : Lit une entrée de répertoire.
+closedir : Ferme un répertoire.
+
+5. Gestion des processus :
+fork : Crée un nouveau processus en dupliquant le processus courant.
+wait : Attend la fin d'un processus enfant.
+waitpid : Attend la fin d'un processus enfant spécifique.
+wait3 : Attend la fin d'un processus enfant, avec des informations d'utilisation des ressources.
+wait4 : Comme wait3, mais attend un processus enfant spécifique.
+execve : Remplace le processus courant par un nouveau programme.
+
+6. Gestion des signaux :
+signal : Définit une gestion des signaux pour un signal spécifique.
+sigaction : Examine ou modifie l'action d'un signal.
+sigemptyset : Initialise un ensemble de signaux vide.
+sigaddset : Ajoute un signal à un ensemble de signaux.
+kill : Envoie un signal à un processus.
+exit : Termine le processus courant.
+
+7. Contrôle terminal :
+isatty : Vérifie si un descripteur de fichier correspond à un terminal.
+ttyname : Retourne le nom de fichier du terminal associé à un descripteur de fichier.
+ttyslot : Retourne le numéro de slot du terminal du processus courant.
+ioctl : Manipule les paramètres d'un périphérique (souvent utilisé pour les terminaux).
+tcsetattr : Configure les paramètres du terminal.
+tcgetattr : Récupère les paramètres du terminal.
+
+8. Gestion des environnements :
+getenv : Récupère la valeur d'une variable d'environnement.
+
+9. Gestion des erreurs :
+strerror : Retourne une chaîne de caractères décrivant l'erreur correspondant à un code d'erreur.
+perror : Affiche un message d'erreur sur la sortie standard des erreurs.
+
+10. Bibliothèque termcap/terminfo :
+tgetent : Initialise l'accès à la base de données de capacités terminales.
+tgetflag : Récupère une capacité booléenne d'un terminal.
+tgetnum : Récupère une capacité numérique d'un terminal.
+tgetstr : Récupère une capacité de chaîne de caractères d'un terminal.
+tgoto : Génère une séquence de déplacement de curseur.
+tputs : Écrit une chaîne de caractères de contrôle terminal.
